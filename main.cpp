@@ -144,8 +144,8 @@ void multiArrayCallback(const std_msgs::Float64MultiArray &comingMultiArray){
   last_time = millis();
   
   drive_joystick_array.data[0]=comingMultiArray.data[1]-comingMultiArray.data[0];
-  drive_joystick_array.data[1]=comingMultiArray.data[1]-comingMultiArray.data[0];
-  //drive_joystick_array.data[2]=comingMultiArray.data[1]+comingMultiArray.data[0];
+  //drive_joystick_array.data[1]=comingMultiArray.data[1]-comingMultiArray.data[0];
+  drive_joystick_array.data[1]=comingMultiArray.data[1]+comingMultiArray.data[0];
   //drive_joystick_array.data[3]=comingMultiArray.data[1]+comingMultiArray.data[0];
   torque_mode_float = comingMultiArray.data[2];
 
